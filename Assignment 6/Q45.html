@@ -1,0 +1,21 @@
+<!-- create an array having any three number. extract each values using for loop-->
+<!DOCTYPE html>
+<html>
+<body>
+    <button onclick="displayValues()">Show Values</button>
+    <p id="output"></p>
+</body>
+</html>
+<script>
+    function displayValues() {
+    
+        let numbers = [10, 20, 30];
+       
+        let output = document.getElementById("output");
+
+        output.innerHTML = ""; 
+        for (let i = 0; i < numbers.length; i++) {
+            output.innerHTML += `Value at index ${i}: ${numbers[i]}<br>`;
+        }
+    }
+</script>

@@ -1,0 +1,19 @@
+<!--  create an array with any three value . on button click add value 20 within an array (i.e at start position
+)-->
+<!DOCTYPE html>
+<html>
+<body>
+
+    <button onclick="addValue()">Add 20 to Start of Array</button>
+
+    <script>
+     
+        let myArray = [5, 15, 25];
+        function addValue() {
+            myArray.unshift(20); 
+            console.log("Updated Array:", myArray);
+        }
+    </script>
+
+</body>
+</html>

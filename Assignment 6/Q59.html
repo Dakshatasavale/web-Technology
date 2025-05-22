@@ -1,0 +1,35 @@
+<!--  generate an array with value [1,2,3,4] and show the result as new array=> [1,4,9,16] using for in loop ,
+forEach loop and map() function-->
+<!DOCTYPE html>
+<body>
+    <h1>Squaring Array Elements [1, 2, 3, 4]</h1>
+
+    <h2>Results:</h2>
+    <p><strong>Using for...in:</strong> <span id="result-forin"></span></p>
+    <p><strong>Using forEach():</strong> <span id="result-foreach"></span></p>
+    <p><strong>Using map():</strong> <span id="result-map"></span></p>
+
+    <script>
+        const nums = [1, 2, 3, 4];
+        const squaredForIn = [];
+        for (let index in nums) {
+            squaredForIn.push(nums[index] * nums[index]);
+        }
+        console.log("Squared using for...in:", squaredForIn);
+
+        const squaredForEach = [];
+        nums.forEach(num => {
+            squaredForEach.push(num * num);
+        });
+        console.log("Squared using forEach():", squaredForEach);
+
+        
+        const squaredMap = nums.map(num => num * num);
+        console.log("Squared using map():", squaredMap);
+        
+        document.getElementById("result-forin").textContent = squaredForIn.join(', ');
+        document.getElementById("result-foreach").textContent = squaredForEach.join(', ');
+        document.getElementById("result-map").textContent = squaredMap.join(', ');
+    </script>
+</body>
+</html>

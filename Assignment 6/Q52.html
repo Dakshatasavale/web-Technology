@@ -1,0 +1,19 @@
+<!--  create an array with any five value . on button click remove last value-->
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <button onclick="removeLast()">Remove Last Value</button>
+
+    <script>
+        
+        let myArray = [10, 20, 30, 40, 50];
+        function removeLast() {
+            myArray.pop();
+            console.log("Updated Array:", myArray);
+        }
+    </script>
+
+</body>
+</html>

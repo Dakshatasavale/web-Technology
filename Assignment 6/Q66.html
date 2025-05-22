@@ -1,0 +1,17 @@
+<!-- on mousemove event get x coordinate & y coordinate , and show the result in paragraph.-->
+<!DOCTYPE html>
+<html>
+<body>
+
+  <p id="coords">Move your mouse</p>
+
+  <script>
+    document.addEventListener("mousemove", function(event) {
+      const x = event.clientX;
+      const y = event.clientY;
+      document.getElementById("coords").textContent = `X: ${x}, Y: ${y}`;
+    });
+  </script>
+
+</body>
+</html>

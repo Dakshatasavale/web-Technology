@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplication Function</title>
+  </head>
+  <body>
+    <p id="x1">The result will appear here.</p>
+
+    <script>
+      function calculate(a, b) {
+        let mul = a * b;
+        document.getElementById("x1").innerText =
+          "Multiplication of 10 and 20 : " + mul;
+      }
+
+      window.onload = function () {
+        let num1 = 10;
+        let num2 = 20;
+        calculate(num1, num2);
+      };
+    </script>
+  </body>
+</html>

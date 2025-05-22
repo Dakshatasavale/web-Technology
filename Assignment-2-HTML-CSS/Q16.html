@@ -1,0 +1,45 @@
+<!-- create a menu (horizontal menu) with the help of (ul li or ol li ).
+use float or display property-->
+
+<!DOCTYPE html>
+<head>
+    <style>
+        
+        ul.menu {
+            list-style-type: none; 
+            margin: 0;
+            padding: 0;
+        }
+
+        ul.menu li {
+            display: inline-block; 
+            margin-right: 20px; 
+        }
+
+        ul.menu li a {
+            text-decoration: none; 
+            padding: 10px 15px;
+            background-color: #0a0a0a; 
+            color: white;
+            border-radius: 5px; 
+        }
+
+        ul.menu li a:hover {
+            background-color: #0b0b0b; 
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+</body>
+</html>
+
+
+

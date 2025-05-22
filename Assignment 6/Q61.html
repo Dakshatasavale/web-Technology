@@ -1,0 +1,24 @@
+<!--  generate an example to show the difference between parseInt() & Number() function (Hint: take any value as
+an input)-->
+<!DOCTYPE html>
+<body>
+    <h1>parseInt() vs Number()</h1>
+
+    <p><strong>Input Value:</strong> <span id="inputVal"></span></p>
+    <p><strong>parseInt() Result:</strong> <span id="parseIntResult"></span></p>
+    <p><strong>Number() Result:</strong> <span id="numberResult"></span></p>
+
+    <script>
+        const input = "123abc";
+        const parsedInt = parseInt(input);     
+        const convertedNum = Number(input);  
+        console.log("Input:", input);
+        console.log("parseInt:", parsedInt);
+        console.log("Number:", convertedNum);
+
+        document.getElementById("inputVal").textContent = input;
+        document.getElementById("parseIntResult").textContent = parsedInt;
+        document.getElementById("numberResult").textContent = isNaN(convertedNum) ? 'NaN' : convertedNum;
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!--  generate 2 textbox (having id txt1,txt2 respectively) , get values of both in data1 & data2. now show the
+sum of values in paragraph having id para ( note : if you receive data from textbox then please check data type
+before you do the sum)-->
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>Enter Two Numbers</h1>
+
+    <input type="text" id="txt1" placeholder="Enter first number">
+    <input type="text" id="txt2" placeholder="Enter second number">
+
+  
+    <button onclick="calculateSum()">Calculate Sum</button>
+    <p id="para"></p>
+
+    <script>
+        function calculateSum() {
+            let data1 = document.getElementById("txt1").value;
+            let data2 = document.getElementById("txt2").value;
+
+            
+            let num1 = Number(data1);
+            let num2 = Number(data2);
+
+           
+            if (!isNaN(num1) && !isNaN(num2)) {
+              
+                let sum = num1 + num2;
+                document.getElementById("para").innerText = `The sum is: ${sum}`;
+            } else {
+                
+                document.getElementById("para").innerText = "Please enter valid numbers in both fields.";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+.bordered-paragraph {
+    border-bottom-color: red;     
+    border-bottom-style: dashed;   
+    border-bottom-width: 3px;      
+    padding: 10px;
+}

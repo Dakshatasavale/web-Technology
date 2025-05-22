@@ -1,0 +1,15 @@
+<!-- generate an array with value [1,4,6,8,12,11,13] and show the filteredNums as new array=> [1,11,14] using filter()
+function of javascript-->
+<!DOCTYPE html>
+<body>
+    <p><strong>Original Array:</strong> [1, 4, 6, 8, 12, 11, 13]</p>
+    <p><strong>Filtered Odd Numbers:</strong> <span id="filteredNums"></span></p>
+
+    <script>
+        const numbers = [1, 4, 6, 8, 12, 11, 13];
+        const filteredNums = numbers.filter(num => num % 2 !== 0);
+        console.log("Filtered odd numbers:", filteredNums);
+        document.getElementById("filteredNums").textContent = filteredNums.join(', ');
+    </script>
+</body>
+</html>

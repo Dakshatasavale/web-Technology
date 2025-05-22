@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <p id="id">The object values will appear here.</p>
+    <script>
+        let person = {
+            name: "John Doe",
+            age: 30,
+            location: "New York"
+        };
+        console.log(person);
+        document.getElementById("id").innerText = `Name: ${person.name}, Age: ${person.age}, Location: ${person.location}`;
+    </script>
+</body>
+</html>

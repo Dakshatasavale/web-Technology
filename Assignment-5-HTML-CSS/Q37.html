@@ -1,0 +1,18 @@
+<!-- create a textbox (with id txt) & get any value from text box using button & show result in console ( hint:
+use onclick event & value property for textbox )-->
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="text" id="txt" placeholder="Type something here">
+    <button onclick="displayValue()">Show Value in Console</button>
+
+    <script>
+        
+        function displayValue() {
+            var textboxValue = document.getElementById("txt").value;
+            console.log("Textbox Value:", textboxValue);
+        }
+    </script>
+
+</body>
+</html>

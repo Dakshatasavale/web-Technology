@@ -1,0 +1,28 @@
+<!-- create a paragraph with some dummy content , on mouse over change the paragraph content ( hint: no hint in
+this case )-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        p {
+            font-size: 18px;
+            color: black;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<p id="myParagraph" onmouseover="changeText()">Hover over this text to change it.</p>
+
+<script>
+    function changeText() {
+        var paragraph = document.getElementById("myParagraph");
+        paragraph.innerHTML = "The text has been changed!";
+    }
+</script>
+
+</body>
+</html>

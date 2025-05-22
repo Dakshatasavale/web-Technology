@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>Move your mouse to see the coordinates</h1>
+    <p id="coordinates">X: 0, Y: 0</p>
+
+    <script>
+        document.addEventListener("mousemove", function(event) {
+            let x = event.clientX;
+            let y = event.clientY;
+            document.getElementById("coordinates").innerText = `X: ${x}, Y: ${y}`;
+        });
+    </script>
+</body>
+</html>

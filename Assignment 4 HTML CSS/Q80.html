@@ -1,0 +1,27 @@
+<!-- create a para (100X100 dimension ) on hover shift it with translate,translateX,translateY property-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .shift-paragraph {
+      width: 100px;  
+      height: 100px;
+      background-color: lightgreen;
+      text-align: center;  
+      line-height: 100px; 
+      border: 1px solid #333; 
+      transition: transform 0.5s ease;
+    }
+
+   
+    .shift-paragraph:hover {
+      transform: translate(50px, 30px);  
+    }
+  </style>
+</head>
+<body>
+
+<p class="shift-paragraph">Hover me!</p>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!--  create a paragraph , on mouseover apply background color (grey) & onmouseout apply background color
+(lightgrey)-->
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <p id="p" 
+     onmouseover="changeBackground('grey')" 
+     onmouseout="changeBackground('lightgrey')">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ullam eum cumque assumenda adipisci quis maiores aperiam earum, soluta ab veritatis, harum necessitatibus libero. Error illum dolorum quaerat. Tempora, quos.
+  </p>
+
+  <script>
+    function changeBackground(color) {
+      document.getElementById("p").style.backgroundColor = color;
+    }
+  </script>
+
+</body>
+</html>

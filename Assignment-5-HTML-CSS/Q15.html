@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>Type in the textbox and focus/blur to trigger the function</h1>
+    <input type="text" id="textBox" placeholder="Click and move focus" onblur="calculate()" onfocus="calculate()">
+
+    <script>
+        // Anonymous function assigned to a variable
+        let calculate = function() {
+            console.log("Dummy text: Function executed on event.");
+        };
+    </script>
+</body>
+</html>

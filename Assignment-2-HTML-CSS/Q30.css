@@ -1,0 +1,5 @@
+.bordered-paragraph {
+    border: 1px solid black; 
+    border-bottom-left-radius: 15px; 
+    padding: 20px; 
+}

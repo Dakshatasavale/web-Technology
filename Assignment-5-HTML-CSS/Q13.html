@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Transformation</title>
+</head>
+<body>
+    <h1>Type in the textbox to see transformations</h1>
+    <input type="text" id="textInput" placeholder="Enter some text" onkeyup="transformText()">
+    <p id="x1">Uppercase: </p>
+    <p id="x2">Lowercase: </p>
+
+    <script>
+        function transformText() {
+            let input = document.getElementById("textInput").value;
+            document.getElementById("x1").innerText = "Uppercase: " + input.toUpperCase();
+            document.getElementById("x2").innerText = "Lowercase: " + input.toLowerCase();
+        }
+    </script>
+</body>
+</html>

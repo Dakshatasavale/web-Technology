@@ -1,0 +1,28 @@
+<!-- -->
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h3>Enter Mobile Number:</h3>
+  <input type="text" id="mobileInput" placeholder="Enter 10-digit number">
+  <button onclick="validateMobile()">Check</button>
+
+  <p id="result"></p>
+
+  <script>
+    function validateMobile() {
+      var number = document.getElementById("mobileInput").value;
+      var result = document.getElementById("result");
+
+      if (/^[0-9]{10}$/.test(number)) {
+        result.innerText = "Valid mobile number";
+        result.style.color = "green";
+      } else {
+        result.innerText = "Invalid mobile number";
+        result.style.color = "red";
+      }
+    }
+  </script>
+
+</body>
+</html>

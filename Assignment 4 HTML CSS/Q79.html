@@ -1,0 +1,32 @@
+<!--  create a para (100X100 dimension ) on hover rotate it with 100deg , -50deg-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <style>
+    .rotate-paragraph {
+      width: 100px;  
+      height: 100px; 
+      background-color: lightblue;
+      text-align: center;  
+      line-height: 100px;  
+      transition: transform 0.5s ease;
+      border: 1px solid #333; 
+    }
+
+    .rotate-paragraph:hover {
+      transform: rotate(100deg); 
+    }
+
+    
+    .rotate-paragraph:active {
+      transform: rotate(-50deg); 
+    }
+  </style>
+</head>
+<body>
+
+<p class="rotate-paragraph">Hover me!</p>
+
+</body>
+</html>

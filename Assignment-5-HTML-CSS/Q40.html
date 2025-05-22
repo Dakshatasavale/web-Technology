@@ -1,0 +1,33 @@
+<!--  create a textbox (with id txt) & get value from textbox , in case textbox is empty then please show textbox
+border with color red & border width 2px.-->
+<!DOCTYPE html>
+<html >
+<body>
+
+    <h1>Enter a Value</h1>
+
+    <input type="text" id="txt" placeholder="Type something here">
+
+ 
+    <button onclick="validateTextbox()">Validate</button>
+
+    <script>
+        function validateTextbox() {
+           
+            var textbox = document.getElementById("txt");
+
+            
+            if (textbox.value.trim() === "") {
+           
+                textbox.style.borderColor = "red";
+                textbox.style.borderWidth = "2px";
+            } else {
+            
+                textbox.style.borderColor = "";
+                textbox.style.borderWidth = "";
+            }
+        }
+    </script>
+
+</body>
+</html>

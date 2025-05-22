@@ -1,0 +1,27 @@
+<!-- ) create a textbox ( id ="txt" ) , get value from the textbox & check whether the value is string or number
+( hint: use isNaN() function )-->
+<!DOCTYPE html>
+<html>
+<body>
+
+  <label for="txt">Enter a value:</label>
+  <input type="text" id="txt">
+  <button onclick="checkValue()">Check</button>
+
+  <p id="result"></p>
+
+  <script>
+    function checkValue() {
+      const value = document.getElementById("txt").value;
+      const resultParagraph = document.getElementById("result");
+
+      if (isNaN(value)) {
+        resultParagraph.textContent = `"${value}" is a string.`;
+      } else {
+        resultParagraph.textContent = `"${value}" is a number.`;
+      }
+    }
+  </script>
+
+</body>
+</html>

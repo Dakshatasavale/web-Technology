@@ -1,0 +1,28 @@
+<!-- -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h3>Enter Your Name:</h3>
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+    <button onclick="validateName()">Check</button>
+
+    <p id="nameResult"></p>
+
+    <script>
+      function validateName() {
+        var name = document.getElementById("nameInput").value;
+        var result = document.getElementById("nameResult");
+
+        var pattern = /^[A-Za-z ]{2,30}$/;
+
+        if (pattern.test(name)) {
+          result.innerText = "Valid name";
+          result.style.color = "green";
+        } else {
+          result.innerText = "Invalid name";
+          result.style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>
